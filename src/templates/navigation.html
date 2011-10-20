@@ -1,0 +1,14 @@
+<div class="topbar">
+  <div class="fill">
+    <div class="container">
+      <a class="brand" href="{{ url_for('index') }}">Encuentro Linux 2011</a>
+      <ul class="nav">
+        <li class="active"><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">¿Quienes somos?</a></li>
+    	{% if current_user %}
+		<li><a href="{{ url_for('logout') }}">Salir</a></li>
+		{% endif %}
+      </ul>
+    </div>
+  </div>
+</div>

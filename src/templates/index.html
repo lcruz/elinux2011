@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+      
+{% block content %}
+      <div class="hero-unit">
+        <h1>Hello, Encuentro Linux!</h1>
+        <p>Ejemplo de aplicación en Flask con Appengine para el encuentro linux, esperamos que les sirva</p>
+        <p><a class="btn primary large" href="{{ url_for('save') }}">Registrate</a></p>
+      </div>
+
+    
+      <div class="row">
+        <div class="span6">
+          <h2>Sencillo</h2>
+          <p>Flask es una herramienta sencilla que no trae muchas cosas pero trae las suficientes para con construir aplicaciones de calidad.</p>
+       
+        </div>
+        <div class="span5">
+          <h2>Liviano</h2>
+           <p>Flask tiene muy poco código, ideal para entender como funciona un framework y para aprender Python, aunque también puedes ocuparlo con aplicaciones grandes</p>
+       
+       </div>
+        <div class="span5">
+          <h2>Rápido</h2>
+          <p>Crea con pocas lineas de código aplicaciones robustas y escalables, flask es muy flexible y apto para muchas cosas</p>
+          
+        </div>
+      </div>
+{% endblock %}
+     
